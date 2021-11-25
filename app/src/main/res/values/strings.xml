@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dona</string>
+    <string name="prefs_file">com.example.dona.PREFERENCE_FILE_KEY</string>
+
+</resources>

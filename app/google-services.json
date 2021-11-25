@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690564621211",
+    "project_id": "dona-cfd46",
+    "storage_bucket": "dona-cfd46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690564621211:android:cdb0965b2c7745ee82773e",
+        "android_client_info": {
+          "package_name": "com.example.dona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690564621211-i5bssc0dkre9ou15hlgg998eja8c2ib8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTvN_Dhs4d1hZ7RyZjRpe4xDAujTLEbm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690564621211-i5bssc0dkre9ou15hlgg998eja8c2ib8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
