@@ -42,6 +42,8 @@ class AuthActivity : AppCompatActivity() {
         setup()
         sesion()
 
+        //prueba de push
+
     }
 
     override fun onStart() {
