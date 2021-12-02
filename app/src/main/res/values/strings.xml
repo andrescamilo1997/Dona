@@ -7,6 +7,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
     <string name="AuthActivity">Log In</string>
+    <string name="conten_descrip">image</string>
+    <string name="passwordhint">Contraseña</string>
 
 
 </resources>

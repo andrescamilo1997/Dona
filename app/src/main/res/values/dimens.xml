@@ -2,4 +2,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="et_padding">9dp</dimen>
+    <dimen name="et_textSize">16sp</dimen>
+    <dimen name="btn_padding">8dp</dimen>
+    <string name="btn_lbl_login">Iniciar Sesión</string>
+    <string name="btn_lbl_Reg">Registrarse</string>
+    <dimen name="btn_Text_Size">18sp</dimen>
 </resources>

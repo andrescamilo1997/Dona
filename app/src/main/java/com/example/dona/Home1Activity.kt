@@ -60,7 +60,7 @@ class Home1Activity : AppCompatActivity() {
         val emailTextView = findViewById<TextView>(R.id.emailTextView)
         val providerTextView2 = findViewById<TextView>(R.id.providerTextView)
         val cerrarSesionButton = findViewById<Button>(R.id.cerrarSesionButton)
-        val ClosedSeccion = findViewById<Button>(R.id.ClosedSeccion)
+        //val ClosedSeccion = findViewById<Button>(R.id.ClosedSeccion)
         title = "inicio"
         emailTextView.text = email
         providerTextView2.text =provider
