@@ -7,10 +7,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Dona">
+        android:theme="@style/Theme.Dona"
+        >
         <activity
-            android:name=".HomeActivity"
+            android:name=".Home1Activity"
             android:exported="false"
+            android:label="@string/title_activity_home1"
             android:theme="@style/Apptheme"/>
 
         <activity

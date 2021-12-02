@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".AuthActivity">
 
     <LinearLayout
@@ -11,74 +12,87 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo_dona_p01_g034" />
 
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="Email"
+            android:hint="Usuario"
             android:inputType="textEmailAddress" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="30dp" />
 
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Contraceña"
             android:inputType="textPassword"
             android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/signUpButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#FFAC4D"
-                android:text="Registrar"
-                android:textColor="#0D47A1" />
-
-            <Space
-                android:layout_width="8dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+            android:gravity="center"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/logInButton"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FF9800"
-                android:text="Acceder"
-                android:textColor="@android:color/white"
+                android:background="@color/RosaClaro"
+                android:text="Inicia Sesión"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/RosaClaro"
+                android:text="Registrar"
+                android:textColor="@color/white"
                 tools:ignore="TextContrastCheck" />
         </LinearLayout>
 
         <Space
             android:layout_width="8dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="20dp" />
 
         <Button
             android:id="@+id/googleButton"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:drawableStart="@drawable/common_google_signin_btn_icon_dark"
+            android:drawableStart="@drawable/common_google_signin_btn_icon_light"
             android:text="Google"
             android:textAlignment="viewStart"
             android:textColor="@color/design_default_color_primary_dark"

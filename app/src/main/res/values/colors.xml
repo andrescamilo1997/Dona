@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primaryColor">#F6B04D</color>
+    <color name="Rosado">#FE0B68</color>
+    <color name="Azul">#2B9DCA</color>
+    <color name="RosaClaro">#F98BA4</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>

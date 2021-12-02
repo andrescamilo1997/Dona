@@ -25,6 +25,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 class AuthActivity : AppCompatActivity() {
     private val  GOOGLE_SIGN_IN = 100
     override fun onCreate(savedInstanceState: Bundle?) {
+
         Thread.sleep(2000)
 
         setTheme(R.style.Apptheme)
@@ -66,7 +67,7 @@ class AuthActivity : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val logInButton = findViewById<Button>(R.id.logInButton)
         val googleButton = findViewById<Button>(R.id.googleButton)
-        title = "Autenticación"
+        title = "Log In"
 
         signUpButton.setOnClickListener{
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
@@ -120,7 +121,7 @@ class AuthActivity : AppCompatActivity() {
         dialog.show()
     }
     private fun showHome(email: String, provider: ProviderType ){
-        val homeIntent = Intent(this, HomeActivity::class.java).apply {
+        val homeIntent = Intent(this, Home1Activity::class.java).apply {
             putExtra("email", email)
             putExtra("provider", provider.name)
         }
