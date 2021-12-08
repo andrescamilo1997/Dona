@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_fragment_profile.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_activity_promo.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_promo.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable_logo_dona_p01_g034.jpg.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable/logo_dona_p01_g034.jpg"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable-v24_logo.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable-v24/logo.png"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable_logo2.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable/logo2.png"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable_ic_home_black_24dp.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_activity_home1.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_home1.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable_splashscreen.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable/splashscreen.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_item_list.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/item_list.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_fragment_dashboard.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/menu_bottom_nav_menu.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_fragment_home.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_activity_promocion_act.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_promocion_act.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable-v24_sugar.jpg.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable-v24/sugar.jpg"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_activity_splash.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/navigation_mobile_navigation2.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/navigation/mobile_navigation2.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_activity_auth.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_auth.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/layout_fragment_notifications.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    }
+]

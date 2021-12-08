@@ -1,0 +1,42 @@
+com/misiontic2022/dona/DataBindingTriggerClass.java
+ com.misiontic2022.dona.DataBindingTriggerClass
+com/misiontic2022/dona/databinding/FragmentDashboardBinding.java
+ com.misiontic2022.dona.databinding.FragmentDashboardBinding
+com/misiontic2022/dona/databinding/ActivityHome1Binding.java
+ com.misiontic2022.dona.databinding.ActivityHome1Binding
+com/misiontic2022/dona/databinding/ItemListBindingImpl.java
+ com.misiontic2022.dona.databinding.ItemListBindingImpl
+com/misiontic2022/dona/databinding/ItemListBinding.java
+ com.misiontic2022.dona.databinding.ItemListBinding
+com/misiontic2022/dona/databinding/ActivityPromocionActBindingImpl.java
+ com.misiontic2022.dona.databinding.ActivityPromocionActBindingImpl
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/misiontic2022/dona/databinding/ActivityAuthBinding.java
+ com.misiontic2022.dona.databinding.ActivityAuthBinding
+com/misiontic2022/dona/databinding/FragmentHomeBinding.java
+ com.misiontic2022.dona.databinding.FragmentHomeBinding
+com/misiontic2022/dona/databinding/FragmentNotificationsBinding.java
+ com.misiontic2022.dona.databinding.FragmentNotificationsBinding
+com/misiontic2022/dona/BuildConfig.java
+ com.misiontic2022.dona.BuildConfig
+com/misiontic2022/dona/databinding/ActivityPromoBindingImpl.java
+ com.misiontic2022.dona.databinding.ActivityPromoBindingImpl
+com/misiontic2022/dona/databinding/ActivityPromocionActBinding.java
+ com.misiontic2022.dona.databinding.ActivityPromocionActBinding
+com/misiontic2022/dona/databinding/ActivityPromoBinding.java
+ com.misiontic2022.dona.databinding.ActivityPromoBinding
+com/misiontic2022/dona/databinding/FragmentProfileBinding.java
+ com.misiontic2022.dona.databinding.FragmentProfileBinding
+com/misiontic2022/dona/DataBinderMapperImpl.java
+ com.misiontic2022.dona.DataBinderMapperImpl
+ com.misiontic2022.dona.DataBinderMapperImpl$InnerBrLookup
+ com.misiontic2022.dona.DataBinderMapperImpl$InnerLayoutIdLookup
+com/misiontic2022/dona/BR.java
+ com.misiontic2022.dona.BR
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/misiontic2022/dona/databinding/ActivitySplashBinding.java
+ com.misiontic2022.dona.databinding.ActivitySplashBinding

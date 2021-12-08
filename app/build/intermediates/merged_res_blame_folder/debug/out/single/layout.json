@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_dashboard.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notifications.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_home1.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_home1.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_promo.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_promo.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_promocion_act.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_promocion_act.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_auth.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/activity_auth.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/niamaria/Desktop/ed/Dona/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_list.xml",
+        "source": "/Users/niamaria/Desktop/ed/Dona/app/src/main/res/layout/item_list.xml"
+    }
+]

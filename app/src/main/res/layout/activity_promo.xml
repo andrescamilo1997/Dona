@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="isData"
+            type="com.misiontic2022.dona.model.PromocionData" />
+    </data>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.PromoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/promoImg"
+                android:layout_marginTop="30dp"
+                android:imageUrl="@{isData.img}"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"/>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/promoName"
+                android:text="@{isData.promo}"
+                android:gravity="center"
+                android:textStyle="bold|normal"
+                android:textColor="#E91E63"
+                android:padding="12dp"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/promoInfo"
+                android:text="@{isData.info}"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+</layout>

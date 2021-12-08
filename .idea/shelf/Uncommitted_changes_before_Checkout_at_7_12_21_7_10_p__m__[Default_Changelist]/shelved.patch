@@ -1,0 +1,1187 @@
+Index: app/src/main/res/layout/activity_home1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:id=\"@+id/container\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:paddingTop=\"?attr/actionBarSize\">\n\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        android:orientation=\"horizontal\">\n\n        <TextView\n            android:id=\"@+id/emailTextView\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"40dp\"\n            android:layout_weight=\"1\"\n            android:text=\"TextView\" />\n\n        <TextView\n            android:id=\"@+id/providerTextView\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"40dp\"\n            android:layout_weight=\"1\"\n            android:text=\"Proveedor\" />\n\n        <Button\n            android:id=\"@+id/cerrarSesionButton\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:background=\"@color/Rosado\"\n            android:text=\"Cerrar Sesiòn\"\n            android:textColor=\"@color/white\" />\n    </LinearLayout>\n\n    <com.google.android.material.bottomnavigation.BottomNavigationView\n        android:id=\"@+id/nav_view\"\n        android:layout_width=\"0dp\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"0dp\"\n        android:layout_marginEnd=\"0dp\"\n        android:background=\"?android:attr/windowBackground\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintLeft_toLeftOf=\"parent\"\n        app:layout_constraintRight_toRightOf=\"parent\"\n        app:menu=\"@menu/bottom_nav_menu\" />\n\n    <fragment\n        android:id=\"@+id/nav_host_fragment_activity_home1\"\n        android:name=\"androidx.navigation.fragment.NavHostFragment\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        app:defaultNavHost=\"true\"\n        app:layout_constraintBottom_toTopOf=\"@id/nav_view\"\n        app:layout_constraintHorizontal_bias=\"0.0\"\n        app:layout_constraintLeft_toLeftOf=\"parent\"\n        app:layout_constraintRight_toRightOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\"\n        app:layout_constraintVertical_bias=\"1.0\"\n        app:navGraph=\"@navigation/mobile_navigation2\" />\n\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_home1.xml b/app/src/main/res/layout/activity_home1.xml
+--- a/app/src/main/res/layout/activity_home1.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/activity_home1.xml	(date 1638889109000)
+@@ -35,6 +35,27 @@
+             android:textColor="@color/white" />
+     </LinearLayout>
+ 
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        >
++        <TextView
++            android:id="@+id/link_promocion"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="74dp"
++            android:foreground="?attr/selectableItemBackground"
++            android:padding="20dp"
++            android:text="@string/promocion"
++            android:textColor="@color/Azul"
++            android:textSize="20dp" />
++
++
++    </LinearLayout>
++
+     <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:id="@+id/nav_view"
+         android:layout_width="0dp"
+Index: app/src/main/res/navigation/mobile_navigation2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<navigation xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:id=\"@+id/mobile_navigation2\"\n    app:startDestination=\"@+id/navigation_home\">\n\n    <fragment\n        android:id=\"@+id/navigation_home\"\n        android:name=\"com.example.dona.ui.home.HomeFragment\"\n        android:label=\"@string/title_home\"\n        tools:layout=\"@layout/fragment_home\" />\n\n    <fragment\n        android:id=\"@+id/navigation_dashboard\"\n        android:name=\"com.example.dona.ui.dashboard.DashboardFragment\"\n        android:label=\"@string/title_dashboard\"\n        tools:layout=\"@layout/fragment_dashboard\" />\n\n    <fragment\n        android:id=\"@+id/navigation_notifications\"\n        android:name=\"com.example.dona.ui.notifications.NotificationsFragment\"\n        android:label=\"@string/title_notifications\"\n        tools:layout=\"@layout/fragment_notifications\" />\n    <fragment\n        android:id=\"@+id/navigation_profile\"\n        android:name=\"com.example.dona.ui.profile.ProfileFragment\"\n        android:label=\"@string/title_profile\"\n        tools:layout=\"@layout/fragment_profile\" />\n</navigation>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/navigation/mobile_navigation2.xml b/app/src/main/res/navigation/mobile_navigation2.xml
+--- a/app/src/main/res/navigation/mobile_navigation2.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/navigation/mobile_navigation2.xml	(date 1638887554000)
+@@ -7,24 +7,24 @@
+ 
+     <fragment
+         android:id="@+id/navigation_home"
+-        android:name="com.example.dona.ui.home.HomeFragment"
++        android:name="com.misiontic2022.dona.ui.home.HomeFragment"
+         android:label="@string/title_home"
+         tools:layout="@layout/fragment_home" />
+ 
+     <fragment
+         android:id="@+id/navigation_dashboard"
+-        android:name="com.example.dona.ui.dashboard.DashboardFragment"
++        android:name="com.misiontic2022.dona.ui.dashboard.DashboardFragment"
+         android:label="@string/title_dashboard"
+         tools:layout="@layout/fragment_dashboard" />
+ 
+     <fragment
+         android:id="@+id/navigation_notifications"
+-        android:name="com.example.dona.ui.notifications.NotificationsFragment"
++        android:name="com.misiontic2022.dona.ui.notifications.NotificationsFragment"
+         android:label="@string/title_notifications"
+         tools:layout="@layout/fragment_notifications" />
+     <fragment
+         android:id="@+id/navigation_profile"
+-        android:name="com.example.dona.ui.profile.ProfileFragment"
++        android:name="com.misiontic2022.dona.ui.profile.ProfileFragment"
+         android:label="@string/title_profile"
+         tools:layout="@layout/fragment_profile" />
+ </navigation>
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\n    id 'com.android.application'\n    id 'kotlin-android'\n}\napply plugin: 'com.android.application'\napply plugin: 'com.google.gms.google-services'\n\nandroid {\n    compileSdk 31\n\n    defaultConfig {\n        applicationId \"com.example.dona\"\n        minSdk 22\n        targetSdk 31\n        versionCode 1\n        versionName \"1.0\"\n\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\n    }\n\n    buildTypes {\n        release {\n            minifyEnabled false\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\n        }\n    }\n    compileOptions {\n        sourceCompatibility JavaVersion.VERSION_1_8\n        targetCompatibility JavaVersion.VERSION_1_8\n    }\n    kotlinOptions {\n        jvmTarget = '1.8'\n    }\n    buildFeatures {\n        viewBinding true\n    }\n}\n\ndependencies {\n\n    implementation 'androidx.core:core-ktx:1.7.0'\n    implementation 'androidx.appcompat:appcompat:1.4.0'\n    implementation 'com.google.android.material:material:1.4.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'\n    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'\n    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'\n    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'\n    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'\n    implementation 'androidx.mediarouter:mediarouter:1.2.5'\n    testImplementation 'junit:junit:'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.3'\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'\n    implementation platform('com.google.firebase:firebase-bom:29.0.0')\n    implementation 'com.google.firebase:firebase-analytics-ktx'\n    implementation platform('com.google.firebase:firebase-bom:28.4.1')\n    implementation 'com.google.firebase:firebase-auth'\n    implementation 'com.google.android.gms:play-services-auth:19.2.0'\n\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/build.gradle	(date 1638902469000)
+@@ -4,6 +4,9 @@
+ }
+ apply plugin: 'com.android.application'
+ apply plugin: 'com.google.gms.google-services'
++apply plugin: 'kotlin-android'
++apply plugin: 'kotlin-kapt'
++apply plugin: 'kotlin-android-extensions'
+ 
+ android {
+     compileSdk 31
+@@ -34,6 +37,8 @@
+     buildFeatures {
+         viewBinding true
+     }
++
++    dataBinding.enabled = true
+ }
+ 
+ dependencies {
+@@ -47,6 +52,7 @@
+     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+     implementation 'androidx.mediarouter:mediarouter:1.2.5'
++    implementation 'com.google.firebase:firebase-database-ktx:20.0.3'
+     testImplementation 'junit:junit:'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+@@ -55,6 +61,20 @@
+     implementation platform('com.google.firebase:firebase-bom:28.4.1')
+     implementation 'com.google.firebase:firebase-auth'
+     implementation 'com.google.android.gms:play-services-auth:19.2.0'
++    implementation 'androidx.appcompat:appcompat:1.4.0'
++    implementation 'com.google.firebase:firebase-firestore-ktx'
++    implementation 'com.firebaseui:firebase-ui-auth:6.1.0'
++
++
++    /*imageview dependencies*/
++    implementation 'com.squareup.picasso:picasso:2.5.2'
++    implementation 'com.github.bumptech.glide:glide:4.12.0'
++    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
++
++
++
++
++
+ 
+ 
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".ui.home.HomeFragment\">\n\n    <LinearLayout\n        android:id=\"@+id/linearLayout\"\n        android:layout_width=\"0dp\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"16dp\"\n        android:layout_marginTop=\"16dp\"\n        android:layout_marginEnd=\"16dp\"\n        android:orientation=\"vertical\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\">\n\n        <LinearLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\"\n            android:orientation=\"horizontal\"/>\n    </LinearLayout>\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_home.xml b/app/src/main/res/layout/fragment_home.xml
+--- a/app/src/main/res/layout/fragment_home.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/fragment_home.xml	(date 1638887554000)
+@@ -4,7 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".ui.home.HomeFragment">
++    tools:context="com.misiontic2022.dona.ui.home.HomeFragment">
+ 
+     <LinearLayout
+         android:id="@+id/linearLayout"
+Index: app/src/main/res/layout/fragment_notifications.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".ui.notifications.NotificationsFragment\">\n\n    <TextView\n        android:id=\"@+id/text_notifications\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"8dp\"\n        android:layout_marginTop=\"8dp\"\n        android:layout_marginEnd=\"8dp\"\n        android:textAlignment=\"center\"\n        android:textSize=\"20sp\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\" />\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_notifications.xml b/app/src/main/res/layout/fragment_notifications.xml
+--- a/app/src/main/res/layout/fragment_notifications.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/fragment_notifications.xml	(date 1638887553000)
+@@ -4,7 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".ui.notifications.NotificationsFragment">
++    tools:context="com.misiontic2022.dona.ui.notifications.NotificationsFragment">
+ 
+     <TextView
+         android:id="@+id/text_notifications"
+Index: app/src/main/res/layout/activity_auth.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:background=\"@color/white\"\n    tools:context=\".AuthActivity\">\n\n    <LinearLayout\n        android:id=\"@+id/authLayout\"\n        android:layout_width=\"0dp\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"16dp\"\n        android:layout_marginEnd=\"16dp\"\n        android:gravity=\"center\"\n        android:orientation=\"vertical\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\">\n\n        <ImageView\n            android:id=\"@+id/imageView2\"\n            android:layout_width=\"164dp\"\n            android:layout_height=\"182dp\"\n            android:layout_marginTop=\"100dp\"\n            android:contentDescription=\"@string/conten_descrip\"\n            app:layout_constraintEnd_toEndOf=\"parent\"\n            app:layout_constraintHorizontal_bias=\"0.497\"\n            app:layout_constraintStart_toStartOf=\"parent\"\n            app:layout_constraintTop_toTopOf=\"parent\"\n            app:srcCompat=\"@drawable/logo2\" />\n\n        <EditText\n            android:id=\"@+id/emailEditText\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:inputType=\"textEmailAddress\"\n            android:padding=\"@dimen/et_padding\"\n            android:textColor=\"@color/chocolate\"\n            android:textSize=\"@dimen/et_textSize\"\n            android:ems=\"10\"\n            android:hint=\"Usuario\"\n             />\n\n        <EditText\n            android:id=\"@+id/passwordEditText\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:ems=\"10\"\n            android:hint=\"@string/passwordhint\"\n            android:inputType=\"textPassword\"\n            android:padding=\"@dimen/et_padding\"\n            android:textColor=\"@color/chocolate\"\n            android:textSize=\"@dimen/et_textSize\"\n\n            android:minHeight=\"48dp\" />\n\n        <LinearLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\"\n            android:gravity=\"center\"\n            android:orientation=\"vertical\">\n\n            <Button\n                android:id=\"@+id/logInButton\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:layout_gravity=\"center\"\n                android:layout_marginStart=\"16dp\"\n                android:layout_marginTop=\"8dp\"\n                android:layout_marginEnd=\"16dp\"\n                android:background=\"@color/Azul\"\n                android:foreground=\"?attr/selectableItemBackground\"\n                android:gravity=\"center\"\n                android:paddingTop=\"@dimen/btn_padding\"\n                android:paddingBottom=\"@dimen/btn_padding\"\n                android:text=\"@string/btn_lbl_login\"\n                android:textColor=\"@color/white\"\n                android:textSize=\"@dimen/btn_Text_Size\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\" />\n\n            <Button\n                android:id=\"@+id/signUpButton\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:layout_gravity=\"center\"\n                android:layout_marginStart=\"16dp\"\n                android:layout_marginTop=\"8dp\"\n                android:layout_marginEnd=\"16dp\"\n                android:background=\"@color/RosaClaro\"\n                android:foreground=\"?attr/selectableItemBackground\"\n                android:gravity=\"center\"\n                android:paddingTop=\"@dimen/btn_padding\"\n                android:paddingBottom=\"@dimen/btn_padding\"\n                android:text=\"@string/btn_lbl_Reg\"\n                android:textColor=\"@color/white\"\n                android:textSize=\"@dimen/btn_Text_Size\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\" />\n        </LinearLayout>\n\n        <Button\n            android:id=\"@+id/googleButton\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:background=\"@color/white\"\n            android:drawableStart=\"@drawable/common_google_signin_btn_icon_light\"\n            android:text=\"Google\"\n            android:textAlignment=\"viewStart\"\n            android:textColor=\"@color/design_default_color_primary_dark\"\n            app:iconPadding=\"16dp\" />\n\n    </LinearLayout>\n\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_auth.xml b/app/src/main/res/layout/activity_auth.xml
+--- a/app/src/main/res/layout/activity_auth.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/activity_auth.xml	(date 1638887553000)
+@@ -5,7 +5,7 @@
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@color/white"
+-    tools:context=".AuthActivity">
++    tools:context="com.misiontic2022.dona.AuthActivity">
+ 
+     <LinearLayout
+         android:id="@+id/authLayout"
+Index: app/src/main/res/layout/activity_promocion_act.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_promocion_act.xml b/app/src/main/res/layout/activity_promocion_act.xml
+new file mode 100644
+--- /dev/null	(date 1638892776000)
++++ b/app/src/main/res/layout/activity_promocion_act.xml	(date 1638892776000)
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools" >
++
++    <LinearLayout
++        android:orientation="vertical"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        tools:context=".PromocionActivity">
++        
++        <androidx.recyclerview.widget.RecyclerView
++            android:id="@+id/recyclerPromo"
++            tools:listitem="@layout/item_list"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content">
++
++        </androidx.recyclerview.widget.RecyclerView>
++    
++    </LinearLayout>
++
++
++
++</layout>
+\ No newline at end of file
+Index: app/src/main/java/com/misiontic2022/dona/uitel/Uitel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/misiontic2022/dona/uitel/Uitel.kt b/app/src/main/java/com/misiontic2022/dona/uitel/Uitel.kt
+new file mode 100644
+--- /dev/null	(date 1638767124000)
++++ b/app/src/main/java/com/misiontic2022/dona/uitel/Uitel.kt	(date 1638767124000)
+@@ -0,0 +1,38 @@
++package com.misiontic2022.dona.uitel
++
++import android.content.Context
++import android.media.Image
++import android.widget.ImageView
++import androidx.databinding.BindingAdapter
++import androidx.swiperefreshlayout.widget.CircularProgressDrawable
++import com.bumptech.glide.Glide
++import com.bumptech.glide.request.RequestOptions
++import com.misiontic2022.dona.R
++
++fun getProgessDrawable(c:Context): CircularProgressDrawable {
++    return CircularProgressDrawable(c).apply {
++        strokeWidth = 5f
++        centerRadius = 40f
++        start()
++    }
++
++}
++
++/**set Images*/
++fun ImageView.loadImage(uri:String?,progressDawable:CircularProgressDrawable){
++
++    val option = RequestOptions().placeholder(progressDawable)
++        .error(R.mipmap.ic_launcher)
++
++    Glide.with(context)
++        .setDefaultRequestOptions(option)
++        .load(uri)
++        .into(this)
++
++}
++
++@BindingAdapter("android:imageUrl")
++fun loadImage(view:ImageView,url:String){
++    view.loadImage(url, getProgessDrawable(view.context))
++}
++
+Index: app/src/main/res/layout/item_list.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/item_list.xml b/app/src/main/res/layout/item_list.xml
+new file mode 100644
+--- /dev/null	(date 1638839323000)
++++ b/app/src/main/res/layout/item_list.xml	(date 1638839323000)
+@@ -0,0 +1,81 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    >
++    
++    <data>
++        <variable
++            name="isPromocion"
++            type="com.misiontic2022.dona.model.PromocionData" />
++        
++    </data>
++    <androidx.cardview.widget.CardView
++    android:layout_width="match_parent"
++    android:layout_height="wrap_content"
++        app:cardCornerRadius="5dp"
++        >
++
++    <LinearLayout
++        android:orientation="vertical"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content">
++        <LinearLayout
++            android:orientation="horizontal"
++            android:layout_margin="10dp"
++            android:padding="8dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content">
++
++        <ImageView
++            android:id="@+id/promoImg"
++            android:imageUrl="@{isPromocion.img}"
++            android:scaleType="centerCrop"
++            android:layout_width="140dp"
++            android:layout_height="140dp"/>
++        <LinearLayout
++            android:orientation="vertical"
++            android:gravity="center"
++            android:layout_gravity="center"
++            android:layout_width="match_parent"
++            android:layout_height="match_parent">
++            <TextView
++                android:id="@+id/promoName"
++                android:text="@{isPromocion.promo}"
++                android:textColor="#01B2CA"
++                android:textSize="20sp"
++                android:textStyle="bold|normal"
++                android:layout_gravity="center"
++                android:gravity="center"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content">
++
++            </TextView>
++            <TextView
++                android:id="@+id/promoInfo"
++                android:text="@{isPromocion.info}"
++                android:textColor="@android:color/darker_gray"
++                android:textSize="15sp"
++                android:textStyle="normal"
++                android:layout_gravity="center"
++                android:gravity="center"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content">
++
++            </TextView>
++        </LinearLayout>
++
++        </LinearLayout>
++
++        <View
++            android:background="@android:color/darker_gray"
++            android:layout_width="match_parent"
++            android:layout_height="1dp"/>
++
++    </LinearLayout>
++
++
++</androidx.cardview.widget.CardView>
++
++</layout>
++
+Index: app/src/main/res/layout/activity_promo.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_promo.xml b/app/src/main/res/layout/activity_promo.xml
+new file mode 100644
+--- /dev/null	(date 1638805928000)
++++ b/app/src/main/res/layout/activity_promo.xml	(date 1638805928000)
+@@ -0,0 +1,68 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools">
++    
++    <data>
++        <variable
++            name="isData"
++            type="com.misiontic2022.dona.model.PromocionData" />
++    </data>
++
++    <LinearLayout
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    tools:context=".view.PromoActivity">
++
++    <ScrollView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content">
++        <LinearLayout
++            android:orientation="vertical"
++            android:gravity="center"
++            android:layout_gravity="center"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content">
++
++            <ImageView
++                android:id="@+id/promoImg"
++                android:layout_marginTop="30dp"
++                android:imageUrl="@{isData.img}"
++                android:layout_width="match_parent"
++                android:layout_height="190dp"/>
++            <View
++                android:background="@android:color/darker_gray"
++                android:layout_width="match_parent"
++                android:layout_height="1dp"/>
++            <TextView
++                android:id="@+id/promoName"
++                android:text="@{isData.promo}"
++                android:gravity="center"
++                android:textStyle="bold|normal"
++                android:textColor="#E91E63"
++                android:padding="12dp"
++                android:textSize="22sp"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"/>
++            <TextView
++                android:id="@+id/promoInfo"
++                android:text="@{isData.info}"
++                android:layout_marginTop="15dp"
++                android:textColor="@android:color/black"
++                android:textSize="16sp"
++                android:gravity="start"
++                android:layout_gravity="start"
++                android:layout_marginLeft="10dp"
++                android:layout_marginRight="10dp"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                />
++
++        </LinearLayout>
++
++    </ScrollView>
++
++</LinearLayout>
++
++</layout>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"DesignSurface\">\n    <option name=\"filePathToZoomLevelMap\">\n      <map>\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable-v24/ic_launcher_foreground.xml\" value=\"0.1125\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable/ic_dashboard_black_24dp.xml\" value=\"0.1125\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable/ic_home_black_24dp.xml\" value=\"0.1125\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable/ic_notifications_black_24dp.xml\" value=\"0.1125\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable/splashscreen.xml\" value=\"0.2\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/activity_auth.xml\" value=\"0.25\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/activity_home.xml\" value=\"0.33\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/activity_home1.xml\" value=\"0.4074844074844075\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/activity_main.xml\" value=\"0.12771739130434784\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/activity_splash.xml\" value=\"0.20416666666666666\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/fragment_dashboard.xml\" value=\"0.15443840579710144\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/fragment_home.xml\" value=\"0.15443840579710144\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/fragment_notifications.xml\" value=\"0.20416666666666666\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/layout/fragment_profile.xml\" value=\"0.20416666666666666\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/menu/bottom_nav_menu.xml\" value=\"0.22\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml\" value=\"0.2203125\" />\n        <entry key=\"..\\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml\" value=\"0.2203125\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\n  </component>\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"Android\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/.idea/misc.xml	(date 1638898619000)
+@@ -3,6 +3,7 @@
+   <component name="DesignSurface">
+     <option name="filePathToZoomLevelMap">
+       <map>
++        <entry key="../../../../../layout/custom_preview.xml" value="0.4361111111111111" />
+         <entry key="..\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1125" />
+         <entry key="..\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1125" />
+         <entry key="..\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1125" />
+@@ -20,6 +21,14 @@
+         <entry key="..\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
+         <entry key="..\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+         <entry key="..\:/Users/Usuario/Desktop/pruebasGit/dona/Dona/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
++        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.20208333333333334" />
++        <entry key="app/src/main/res/layout/activity_home1.xml" value="0.1" />
++        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3380208333333333" />
++        <entry key="app/src/main/res/layout/activity_promo.xml" value="0.34739583333333335" />
++        <entry key="app/src/main/res/layout/activity_promocion_act.xml" value="0.34739583333333335" />
++        <entry key="app/src/main/res/layout/dialog_progress.xml" value="0.3378623188405797" />
++        <entry key="app/src/main/res/layout/item_list.xml" value="0.19270833333333334" />
++        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1859375" />
+       </map>
+     </option>
+   </component>
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\n    <string name=\"app_name\">Dona</string>\n    <string name=\"prefs_file\">com.example.dona.PREFERENCE_FILE_KEY</string>\n    <string name=\"title_activity_home1\">Home1Activity</string>\n    <string name=\"title_home\">Home</string>\n    <string name=\"title_dashboard\">Dashboard</string>\n    <string name=\"title_notifications\">Notifications</string>\n    <string name=\"title_profile\">Profile</string>\n    <string name=\"AuthActivity\">Log In</string>\n    <string name=\"conten_descrip\">image</string>\n    <string name=\"passwordhint\">Contraseña</string>\n\n\n</resources>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/values/strings.xml	(date 1638886255000)
+@@ -9,6 +9,7 @@
+     <string name="AuthActivity">Log In</string>
+     <string name="conten_descrip">image</string>
+     <string name="passwordhint">Contraseña</string>
++    <string name="promocion">Ver promociones</string>
+ 
+ 
+ </resources>
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n    <color name=\"primaryColor\">#F6B04D</color>\n    <color name=\"Rosado\">#FE0B68</color>\n    <color name=\"Azul\">#2B9DCA</color>\n    <color name=\"RosaClaro\">#F98BA4</color>\n    <color name=\"purple_500\">#FF6200EE</color>\n    <color name=\"purple_700\">#FF3700B3</color>\n    <color name=\"teal_200\">#FF03DAC5</color>\n    <color name=\"teal_700\">#FF018786</color>\n    <color name=\"black\">#FF000000</color>\n    <color name=\"white\">#FFFFFFFF</color>\n    <color name=\"chocolate\">#6a3f21</color>\n\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+--- a/app/src/main/res/values/colors.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/values/colors.xml	(date 1638886855000)
+@@ -12,4 +12,7 @@
+     <color name="white">#FFFFFFFF</color>
+     <color name="chocolate">#6a3f21</color>
+ 
++    <color name="colorSnackBarError">#F72400</color>
++    <color name="colorSnackBarSuccess">#8BC34A</color>
++
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_dashboard.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".ui.dashboard.DashboardFragment\">\n\n    <TextView\n        android:id=\"@+id/text_dashboard\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"8dp\"\n        android:layout_marginTop=\"8dp\"\n        android:layout_marginEnd=\"8dp\"\n        android:textAlignment=\"center\"\n        android:textSize=\"20sp\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\" />\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_dashboard.xml b/app/src/main/res/layout/fragment_dashboard.xml
+--- a/app/src/main/res/layout/fragment_dashboard.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/fragment_dashboard.xml	(date 1638887554000)
+@@ -4,7 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".ui.dashboard.DashboardFragment">
++    tools:context="com.misiontic2022.dona.ui.dashboard.DashboardFragment">
+ 
+     <TextView
+         android:id="@+id/text_dashboard"
+Index: app/src/main/res/layout/fragment_profile.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".ui.profile.ProfileFragment\">\n\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        android:orientation=\"vertical\"/>\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_profile.xml b/app/src/main/res/layout/fragment_profile.xml
+--- a/app/src/main/res/layout/fragment_profile.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/fragment_profile.xml	(date 1638887554000)
+@@ -4,7 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".ui.profile.ProfileFragment">
++    tools:context="com.misiontic2022.dona.ui.profile.ProfileFragment">
+ 
+     <LinearLayout
+         android:layout_width="match_parent"
+Index: app/src/main/res/layout/activity_splash.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:background=\"@drawable/sugar\"\n    tools:context=\".SplashActivity\">\n\n    <ImageView\n        android:id=\"@+id/imageView\"\n        android:layout_width=\"250dp\"\n        android:layout_height=\"275dp\"\n\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.496\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\"\n        app:srcCompat=\"@drawable/logo\" />\n\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_splash.xml b/app/src/main/res/layout/activity_splash.xml
+--- a/app/src/main/res/layout/activity_splash.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/res/layout/activity_splash.xml	(date 1638887554000)
+@@ -5,7 +5,7 @@
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/sugar"
+-    tools:context=".SplashActivity">
++    tools:context="com.misiontic2022.dona.SplashActivity">
+ 
+     <ImageView
+         android:id="@+id/imageView"
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\nbuildscript {\n    repositories {\n        google()\n        mavenCentral()\n    }\n    dependencies {\n        classpath \"com.android.tools.build:gradle:7.0.3\"\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0\"\n        classpath 'com.google.gms:google-services:4.3.10'\n\n        // NOTE: Do not place your application dependencies here; they belong\n        // in the individual module build.gradle files\n    }\n}\n\ntask clean(type: Delete) {\n    delete rootProject.buildDir\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/build.gradle	(date 1638894390000)
+@@ -8,6 +8,9 @@
+         classpath "com.android.tools.build:gradle:7.0.3"
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0"
+         classpath 'com.google.gms:google-services:4.3.10'
++        classpath 'com.google.firebase:perf-plugin:1.4.0'
++
++
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+Index: app/src/main/java/com/example/dona/Home1Activity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/Home1Activity.kt b/app/src/main/java/com/misiontic2022/dona/Home1Activity.kt
+rename from app/src/main/java/com/example/dona/Home1Activity.kt
+rename to app/src/main/java/com/misiontic2022/dona/Home1Activity.kt
+--- a/app/src/main/java/com/example/dona/Home1Activity.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/Home1Activity.kt	(date 1638893369000)
+@@ -1,9 +1,10 @@
+-package com.example.dona
++package com.misiontic2022.dona
+ 
+ import android.content.Context
+ import android.content.Intent
+ import android.content.SharedPreferences
+ import android.os.Bundle
++import android.view.View
+ import android.widget.Button
+ import android.widget.TextView
+ import com.google.android.material.bottomnavigation.BottomNavigationView
+@@ -12,15 +13,16 @@
+ import androidx.navigation.ui.AppBarConfiguration
+ import androidx.navigation.ui.setupActionBarWithNavController
+ import androidx.navigation.ui.setupWithNavController
+-import com.example.dona.databinding.ActivityHome1Binding
+ import com.google.firebase.auth.FirebaseAuth
++import com.misiontic2022.dona.databinding.ActivityHome1Binding
++
+ 
+ enum class ProviderType{
+     BASIC,
+     GOOGLE
+ }
+ 
+-class Home1Activity : AppCompatActivity() {
++class Home1Activity : AppCompatActivity(), View.OnClickListener  {
+ 
+     private lateinit var binding: ActivityHome1Binding
+ 
+@@ -37,7 +39,11 @@
+         // menu should be considered as top level destinations.
+         val appBarConfiguration = AppBarConfiguration(
+             setOf(
+-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_profile
++                R.id.navigation_home,
++                R.id.navigation_dashboard,
++                R.id.navigation_notifications,
++                R.id.navigation_profile,
++
+             )
+         )
+         setupActionBarWithNavController(navController, appBarConfiguration)
+@@ -45,6 +51,9 @@
+ 
+         //setup
+ 
++
++
++
+         val bundle: Bundle? = intent.extras
+         val email:String? = bundle?.getString("email")
+         val provider:String? = bundle?.getString("provider")
+@@ -55,17 +64,26 @@
+         prefs.putString("email", email)
+         prefs.putString("provider", provider)
+         prefs.apply()
++
++
++        val LinksPromocion = findViewById<TextView>(R.id.link_promocion)
++        LinksPromocion.setOnClickListener(this)
++
++
++
+     }
+     private fun setup(email: String, provider: String){
+         val emailTextView = findViewById<TextView>(R.id.emailTextView)
+         val providerTextView2 = findViewById<TextView>(R.id.providerTextView)
+         val cerrarSesionButton = findViewById<Button>(R.id.cerrarSesionButton)
++        val LinksPromocion = findViewById<TextView>(R.id.link_promocion)
+         //val ClosedSeccion = findViewById<Button>(R.id.ClosedSeccion)
+         title = "inicio"
+         emailTextView.text = email
+         providerTextView2.text =provider
+ 
+ 
++
+         cerrarSesionButton.setOnClickListener {
+             val prefs: SharedPreferences.Editor = getSharedPreferences(
+             getString(R.string.prefs_file),
+@@ -83,4 +101,19 @@
+         val authIntent = Intent(this, AuthActivity::class.java)
+         startActivity(authIntent)
+     }
++
++    override fun onClick(view: View?) {
++        if (view != null) {
++            when (view.id) {
++
++                R.id.link_promocion -> {
++                    //Launch the register screen when the user clicks on the text
++                    val intent = Intent(this@Home1Activity, PromocionActivity::class.java)
++                    startActivity(intent)
++                }
++            }
++        }
++    }
++
++
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/dona/ui/home/HomeFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/home/HomeFragment.kt b/app/src/main/java/com/misiontic2022/dona/ui/home/HomeFragment.kt
+rename from app/src/main/java/com/example/dona/ui/home/HomeFragment.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/home/HomeFragment.kt
+--- a/app/src/main/java/com/example/dona/ui/home/HomeFragment.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/home/HomeFragment.kt	(date 1638888214000)
+@@ -1,15 +1,13 @@
+-package com.example.dona.ui.home
++package com.misiontic2022.dona.ui.home
+ 
+ import android.os.Bundle
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
+-import android.widget.TextView
+ import androidx.fragment.app.Fragment
+ import androidx.lifecycle.Observer
+ import androidx.lifecycle.ViewModelProvider
+-import com.example.dona.R
+-import com.example.dona.databinding.FragmentHomeBinding
++import com.misiontic2022.dona.databinding.FragmentHomeBinding
+ 
+ class HomeFragment : Fragment() {
+ 
+Index: app/src/main/java/com/misiontic2022/dona/view/PromocionActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/misiontic2022/dona/view/PromocionActivity.kt b/app/src/main/java/com/misiontic2022/dona/view/PromocionActivity.kt
+new file mode 100644
+--- /dev/null	(date 1638902469000)
++++ b/app/src/main/java/com/misiontic2022/dona/view/PromocionActivity.kt	(date 1638902469000)
+@@ -0,0 +1,58 @@
++package com.misiontic2022.dona
++
++import androidx.appcompat.app.AppCompatActivity
++import android.os.Bundle
++import android.widget.Toast
++import androidx.recyclerview.widget.LinearLayoutManager
++import com.google.firebase.database.*
++import com.google.firebase.database.DatabaseReference
++import com.misiontic2022.dona.adapter.PromocionAdapter
++import com.misiontic2022.dona.model.PromocionData
++import kotlinx.android.synthetic.main.activity_promocion_act.*
++
++
++class PromocionActivity : AppCompatActivity() {
++    lateinit var mDataBase: DatabaseReference
++    private lateinit var promocList:ArrayList<PromocionData>
++    private  lateinit var mAdapter:PromocionAdapter
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        setContentView(R.layout.activity_promocion_act)
++
++        /**inicializar**/
++        promocList = ArrayList()
++        mAdapter = PromocionAdapter(this, promocList)
++
++        recyclerPromo.layoutManager = LinearLayoutManager(this)
++        recyclerPromo.setHasFixedSize(true)
++
++        //recyclerPromo.adapter = mAdapter
++
++        getPromocionData()
++
++
++    }
++
++    private fun getPromocionData() {
++        mDataBase = FirebaseDatabase.getInstance().getReference("Promociones")
++        mDataBase.addValueEventListener(object :ValueEventListener{
++            override fun onDataChange(snapshot: DataSnapshot) {
++                if (snapshot.exists()){
++                    for (promoSnapshot in snapshot.children){
++                        val promocion = promoSnapshot.getValue(PromocionData::class.java)
++                        promocList.add(promocion!!)
++                    }
++                    recyclerPromo.adapter = mAdapter
++                }
++            }
++
++            override fun onCancelled(error: DatabaseError) {
++                Toast.makeText(this@PromocionActivity, error.message, Toast.LENGTH_SHORT).show()
++
++            }
++
++        })
++
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/dona/ui/profile/ProfileFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/profile/ProfileFragment.kt b/app/src/main/java/com/misiontic2022/dona/ui/profile/ProfileFragment.kt
+rename from app/src/main/java/com/example/dona/ui/profile/ProfileFragment.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/profile/ProfileFragment.kt
+--- a/app/src/main/java/com/example/dona/ui/profile/ProfileFragment.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/profile/ProfileFragment.kt	(date 1638888249000)
+@@ -1,15 +1,12 @@
+-package com.example.dona.ui.profile
++package com.misiontic2022.dona.ui.profile
+ 
+ import android.os.Bundle
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
+-import android.widget.TextView
+ import androidx.fragment.app.Fragment
+-import androidx.lifecycle.Observer
+ import androidx.lifecycle.ViewModelProvider
+-import com.example.dona.databinding.FragmentNotificationsBinding
+-import com.example.dona.databinding.FragmentProfileBinding
++import com.misiontic2022.dona.databinding.FragmentProfileBinding
+ 
+ class ProfileFragment : Fragment() {
+ 
+Index: app/src/main/java/com/example/dona/ui/home/HomeViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/home/HomeViewModel.kt b/app/src/main/java/com/misiontic2022/dona/ui/home/HomeViewModel.kt
+rename from app/src/main/java/com/example/dona/ui/home/HomeViewModel.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/home/HomeViewModel.kt
+--- a/app/src/main/java/com/example/dona/ui/home/HomeViewModel.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/home/HomeViewModel.kt	(date 1638887553000)
+@@ -1,4 +1,4 @@
+-package com.example.dona.ui.home
++package com.misiontic2022.dona.ui.home
+ 
+ import androidx.lifecycle.LiveData
+ import androidx.lifecycle.MutableLiveData
+Index: app/src/main/java/com/example/dona/SplashActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/SplashActivity.kt b/app/src/main/java/com/misiontic2022/dona/SplashActivity.kt
+rename from app/src/main/java/com/example/dona/SplashActivity.kt
+rename to app/src/main/java/com/misiontic2022/dona/SplashActivity.kt
+--- a/app/src/main/java/com/example/dona/SplashActivity.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/SplashActivity.kt	(date 1638887672000)
+@@ -1,4 +1,4 @@
+-package com.example.dona
++package com.misiontic2022.dona
+ 
+ import android.content.Intent
+ import android.os.Build
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"com.example.dona\">\n\n    <application\n        android:allowBackup=\"true\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/Theme.Dona\">\n        <activity\n            android:name=\".SplashActivity\"\n            android:exported=\"true\"\n            android:screenOrientation=\"portrait\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n\n        </activity>\n        <activity\n            android:name=\".Home1Activity\"\n            android:exported=\"false\"\n            android:label=\"@string/title_activity_home1\"\n            android:theme=\"@style/Apptheme\" />\n        <activity\n            android:name=\".AuthActivity\"\n            android:exported=\"true\"\n            android:theme=\"@style/SplashTheme\">\n\n        </activity>\n    </application>\n\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/AndroidManifest.xml	(date 1638887554000)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+-    package="com.example.dona">
++    package="com.misiontic2022.dona">
+ 
+     <application
+         android:allowBackup="true"
+@@ -9,7 +9,7 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.Dona">
+         <activity
+-            android:name=".SplashActivity"
++            android:name="com.misiontic2022.dona.SplashActivity"
+             android:exported="true"
+             android:screenOrientation="portrait">
+             <intent-filter>
+@@ -20,12 +20,12 @@
+ 
+         </activity>
+         <activity
+-            android:name=".Home1Activity"
++            android:name="com.misiontic2022.dona.Home1Activity"
+             android:exported="false"
+             android:label="@string/title_activity_home1"
+             android:theme="@style/Apptheme" />
+         <activity
+-            android:name=".AuthActivity"
++            android:name="com.misiontic2022.dona.AuthActivity"
+             android:exported="true"
+             android:theme="@style/SplashTheme">
+ 
+Index: app/src/main/java/com/example/dona/ui/notifications/NotificationsViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/notifications/NotificationsViewModel.kt b/app/src/main/java/com/misiontic2022/dona/ui/notifications/NotificationsViewModel.kt
+rename from app/src/main/java/com/example/dona/ui/notifications/NotificationsViewModel.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/notifications/NotificationsViewModel.kt
+--- a/app/src/main/java/com/example/dona/ui/notifications/NotificationsViewModel.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/notifications/NotificationsViewModel.kt	(date 1638887553000)
+@@ -1,4 +1,4 @@
+-package com.example.dona.ui.notifications
++package com.misiontic2022.dona.ui.notifications
+ 
+ import androidx.lifecycle.LiveData
+ import androidx.lifecycle.MutableLiveData
+Index: app/src/main/java/com/example/dona/AuthActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/AuthActivity.kt b/app/src/main/java/com/misiontic2022/dona/AuthActivity.kt
+rename from app/src/main/java/com/example/dona/AuthActivity.kt
+rename to app/src/main/java/com/misiontic2022/dona/AuthActivity.kt
+--- a/app/src/main/java/com/example/dona/AuthActivity.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/AuthActivity.kt	(date 1638893883000)
+@@ -1,4 +1,4 @@
+-package com.example.dona
++package com.misiontic2022.dona
+ 
+ import android.content.Context
+ import android.content.Intent
+@@ -10,14 +10,9 @@
+ import android.widget.EditText
+ import android.widget.LinearLayout
+ import androidx.appcompat.app.AlertDialog
+-import com.google.android.gms.auth.api.Auth
+ import com.google.android.gms.auth.api.signin.GoogleSignIn
+-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+-import com.google.android.gms.auth.api.signin.GoogleSignInClient
+ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+-import com.google.android.gms.common.api.Api
+ import com.google.android.gms.common.api.ApiException
+-import com.google.android.gms.tasks.Task
+ import com.google.firebase.analytics.FirebaseAnalytics
+ import com.google.firebase.auth.FirebaseAuth
+ import com.google.firebase.auth.GoogleAuthProvider
+@@ -120,7 +115,7 @@
+         val dialog: AlertDialog = builder.create()
+         dialog.show()
+     }
+-    private fun showHome(email: String, provider: ProviderType ){
++    private fun showHome(email: String, provider: ProviderType){
+         val homeIntent = Intent(this, Home1Activity::class.java).apply {
+             putExtra("email", email)
+             putExtra("provider", provider.name)
+@@ -138,7 +133,7 @@
+                     val credential = GoogleAuthProvider.getCredential(account.idToken, null)
+                     FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
+                         if(it.isSuccessful){
+-                            showHome(account.email ?: "",ProviderType.GOOGLE)
++                            showHome(account.email ?: "", ProviderType.GOOGLE)
+                         }else{
+                             showAlert()
+                         }
+Index: app/src/main/java/com/example/dona/ui/dashboard/DashboardViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/dashboard/DashboardViewModel.kt b/app/src/main/java/com/misiontic2022/dona/ui/dashboard/DashboardViewModel.kt
+rename from app/src/main/java/com/example/dona/ui/dashboard/DashboardViewModel.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/dashboard/DashboardViewModel.kt
+--- a/app/src/main/java/com/example/dona/ui/dashboard/DashboardViewModel.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/dashboard/DashboardViewModel.kt	(date 1638887554000)
+@@ -1,4 +1,4 @@
+-package com.example.dona.ui.dashboard
++package com.misiontic2022.dona.ui.dashboard
+ 
+ import androidx.lifecycle.LiveData
+ import androidx.lifecycle.MutableLiveData
+Index: app/src/main/java/com/example/dona/ui/profile/ProfileViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/profile/ProfileViewModel.kt b/app/src/main/java/com/misiontic2022/dona/ui/profile/ProfileViewModel.kt
+rename from app/src/main/java/com/example/dona/ui/profile/ProfileViewModel.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/profile/ProfileViewModel.kt
+--- a/app/src/main/java/com/example/dona/ui/profile/ProfileViewModel.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/profile/ProfileViewModel.kt	(date 1638887554000)
+@@ -1,4 +1,4 @@
+-package com.example.dona.ui.profile
++package com.misiontic2022.dona.ui.profile
+ 
+ import androidx.lifecycle.LiveData
+ import androidx.lifecycle.MutableLiveData
+Index: app/src/main/java/com/example/dona/ui/notifications/NotificationsFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/notifications/NotificationsFragment.kt b/app/src/main/java/com/misiontic2022/dona/ui/notifications/NotificationsFragment.kt
+rename from app/src/main/java/com/example/dona/ui/notifications/NotificationsFragment.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/notifications/NotificationsFragment.kt
+--- a/app/src/main/java/com/example/dona/ui/notifications/NotificationsFragment.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/notifications/NotificationsFragment.kt	(date 1638888233000)
+@@ -1,4 +1,4 @@
+-package com.example.dona.ui.notifications
++package com.misiontic2022.dona.ui.notifications
+ 
+ import android.os.Bundle
+ import android.view.LayoutInflater
+@@ -8,8 +8,7 @@
+ import androidx.fragment.app.Fragment
+ import androidx.lifecycle.Observer
+ import androidx.lifecycle.ViewModelProvider
+-import com.example.dona.R
+-import com.example.dona.databinding.FragmentNotificationsBinding
++import com.misiontic2022.dona.databinding.FragmentNotificationsBinding
+ 
+ class NotificationsFragment : Fragment() {
+ 
+Index: app/src/main/java/com/example/dona/ui/dashboard/DashboardFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dona/ui/dashboard/DashboardFragment.kt b/app/src/main/java/com/misiontic2022/dona/ui/dashboard/DashboardFragment.kt
+rename from app/src/main/java/com/example/dona/ui/dashboard/DashboardFragment.kt
+rename to app/src/main/java/com/misiontic2022/dona/ui/dashboard/DashboardFragment.kt
+--- a/app/src/main/java/com/example/dona/ui/dashboard/DashboardFragment.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/main/java/com/misiontic2022/dona/ui/dashboard/DashboardFragment.kt	(date 1638888196000)
+@@ -1,4 +1,4 @@
+-package com.example.dona.ui.dashboard
++package com.misiontic2022.dona.ui.dashboard
+ 
+ import android.os.Bundle
+ import android.view.LayoutInflater
+@@ -8,8 +8,7 @@
+ import androidx.fragment.app.Fragment
+ import androidx.lifecycle.Observer
+ import androidx.lifecycle.ViewModelProvider
+-import com.example.dona.R
+-import com.example.dona.databinding.FragmentDashboardBinding
++import com.misiontic2022.dona.databinding.FragmentDashboardBinding
+ 
+ class DashboardFragment : Fragment() {
+ 
+Index: app/src/main/java/com/misiontic2022/dona/model/PromocionData.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/misiontic2022/dona/model/PromocionData.kt b/app/src/main/java/com/misiontic2022/dona/model/PromocionData.kt
+new file mode 100644
+--- /dev/null	(date 1638745616000)
++++ b/app/src/main/java/com/misiontic2022/dona/model/PromocionData.kt	(date 1638745616000)
+@@ -0,0 +1,24 @@
++package com.misiontic2022.dona.model
++
++class PromocionData {
++
++
++    var promo :String? = null
++    var info:String? = null
++    var img:String? = null
++    constructor(){}
++
++    constructor(
++        promo:String?,
++        info:String?,
++        img:String?
++    ){
++        this.promo = promo
++        this.info = info
++        this.img = img
++
++
++    }
++
++
++}
+\ No newline at end of file
+Index: app/src/main/java/com/misiontic2022/dona/adapter/PromocionAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/misiontic2022/dona/adapter/PromocionAdapter.kt b/app/src/main/java/com/misiontic2022/dona/adapter/PromocionAdapter.kt
+new file mode 100644
+--- /dev/null	(date 1638893040000)
++++ b/app/src/main/java/com/misiontic2022/dona/adapter/PromocionAdapter.kt	(date 1638893040000)
+@@ -0,0 +1,54 @@
++package com.misiontic2022.dona.adapter
++
++import android.content.Context
++import android.content.Intent
++import android.view.LayoutInflater
++import android.view.ViewGroup
++import androidx.databinding.DataBindingUtil
++import androidx.recyclerview.widget.RecyclerView
++import com.misiontic2022.dona.PromocionActivity
++import com.misiontic2022.dona.R
++import com.misiontic2022.dona.databinding.ItemListBinding
++import com.misiontic2022.dona.model.PromocionData
++
++class PromocionAdapter(
++    var c:Context, var promoList:ArrayList<PromocionData>
++    ):RecyclerView.Adapter<PromocionAdapter.PromocionViewHolder>() {
++
++    inner class PromocionViewHolder(var v:ItemListBinding):RecyclerView.ViewHolder(v.root){}
++
++    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PromocionViewHolder {
++        val inflter = LayoutInflater.from(parent.context)
++        val v = DataBindingUtil.inflate<ItemListBinding>(
++            inflter, R.layout.item_list, parent,
++        false)
++        return PromocionViewHolder(v)
++    }
++
++    override fun onBindViewHolder(holder: PromocionViewHolder, position: Int) {
++        val newList = promoList[position]
++        holder.v.isPromocion = promoList[position]
++        holder.v.root.setOnClickListener{
++
++            val img = newList.img
++            val promo = newList.promo
++            val info = newList.info
++
++            /*** set Data ***/
++
++            val mIntent = Intent(c, PromocionActivity::class.java)
++
++            mIntent.putExtra("img", img)
++            mIntent.putExtra("info", info)
++            mIntent.putExtra("promo", promo)
++
++            c.startActivity(mIntent)
++
++
++        }
++    }
++
++    override fun getItemCount(): Int {
++        return promoList.size
++    }
++}
+\ No newline at end of file
+Index: app/src/androidTest/java/com/example/dona/ExampleInstrumentedTest.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/androidTest/java/com/example/dona/ExampleInstrumentedTest.kt b/app/src/androidTest/java/com/misiontic2022/dona/ExampleInstrumentedTest.kt
+rename from app/src/androidTest/java/com/example/dona/ExampleInstrumentedTest.kt
+rename to app/src/androidTest/java/com/misiontic2022/dona/ExampleInstrumentedTest.kt
+--- a/app/src/androidTest/java/com/example/dona/ExampleInstrumentedTest.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/androidTest/java/com/misiontic2022/dona/ExampleInstrumentedTest.kt	(date 1638887554000)
+@@ -1,4 +1,4 @@
+-package com.example.dona
++package com.misiontic2022.dona
+ 
+ import androidx.test.platform.app.InstrumentationRegistry
+ import androidx.test.ext.junit.runners.AndroidJUnit4
+Index: app/src/test/java/com/example/dona/ExampleUnitTest.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/com/example/dona/ExampleUnitTest.kt b/app/src/test/java/com/misiontic2022/dona/ExampleUnitTest.kt
+rename from app/src/test/java/com/example/dona/ExampleUnitTest.kt
+rename to app/src/test/java/com/misiontic2022/dona/ExampleUnitTest.kt
+--- a/app/src/test/java/com/example/dona/ExampleUnitTest.kt	(revision 138e82c00670f4c262b7e368e388cd5de342f090)
++++ b/app/src/test/java/com/misiontic2022/dona/ExampleUnitTest.kt	(date 1638887554000)
+@@ -1,4 +1,4 @@
+-package com.example.dona
++package com.misiontic2022.dona
+ 
+ import org.junit.Test
+ 

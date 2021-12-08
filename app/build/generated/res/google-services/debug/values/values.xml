@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">690564621211-i5bssc0dkre9ou15hlgg998eja8c2ib8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">690564621211</string>
+    <string name="google_api_key" translatable="false">AIzaSyCTvN_Dhs4d1hZ7RyZjRpe4xDAujTLEbm8</string>
+    <string name="google_app_id" translatable="false">1:690564621211:android:cdb0965b2c7745ee82773e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCTvN_Dhs4d1hZ7RyZjRpe4xDAujTLEbm8</string>
+    <string name="google_storage_bucket" translatable="false">dona-cfd46.appspot.com</string>
+    <string name="project_id" translatable="false">dona-cfd46</string>
+</resources>
