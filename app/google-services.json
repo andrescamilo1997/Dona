@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "690564621211",
-    "project_id": "dona-cfd46",
-    "storage_bucket": "dona-cfd46.appspot.com"
+    "project_number": "1027906582696",
+    "firebase_url": "https://donasplash-default-rtdb.firebaseio.com",
+    "project_id": "donasplash",
+    "storage_bucket": "donasplash.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:690564621211:android:cdb0965b2c7745ee82773e",
+        "mobilesdk_app_id": "1:1027906582696:android:fff768ff99a098cba76a9d",
         "android_client_info": {
-          "package_name": "com.example.dona"
+          "package_name": "com.MisionTic.DonaCrud"
         }
       },
       "oauth_client": [
         {
-          "client_id": "690564621211-i5bssc0dkre9ou15hlgg998eja8c2ib8.apps.googleusercontent.com",
+          "client_id": "1027906582696-83tvtdr657vchol05v7eq9i5avrjnatg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCTvN_Dhs4d1hZ7RyZjRpe4xDAujTLEbm8"
+          "current_key": "AIzaSyBrPQpGhSDozI_1g4n9PKjilRRmjEIR3t0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "690564621211-i5bssc0dkre9ou15hlgg998eja8c2ib8.apps.googleusercontent.com",
+              "client_id": "1027906582696-83tvtdr657vchol05v7eq9i5avrjnatg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
